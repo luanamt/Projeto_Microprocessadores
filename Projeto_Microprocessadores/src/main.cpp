@@ -14,11 +14,11 @@ void loop() {
     sum += analogRead(A0);
   }
   Serial.print("ADC Value: ");
-  Serial.print(((sum/102300)*3.3*1000)-32);
+  Serial.print(((sum/102300)*3.3*1000)-32); //Precisamos criar uma fórmula para fazer a linearização da tempera, ou seja, calibrar o sensor.
   Serial.print(" mV.");
   Serial.print(" - Temperature: ");
   Serial.print((((sum/102300)*3.3*1000)-32)/10);
   Serial.print(" oC.\n");
-  delay(50);
+  delay(500);
 }
 
