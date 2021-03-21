@@ -19,6 +19,6 @@ void loop() {
   Serial.print(" - Temperature: ");
   Serial.print((((sum/102300)*3.3*1000)-32)/10);
   Serial.print(" oC.\n");
-  delay(50);
+  delay(500);
 }
 
